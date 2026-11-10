@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0014-longest-common-prefix) |
+| [0217-contains-duplicate](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0217-contains-duplicate) |
 ## String
 |  |
 | ------- |
@@ -18,4 +19,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0014-longest-common-prefix) |
+## Hash Table
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0217-contains-duplicate) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
