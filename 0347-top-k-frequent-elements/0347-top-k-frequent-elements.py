@@ -3,10 +3,8 @@ class Solution:
         output=[]
         frequent={}
         for elem in nums:
-            if elem not in frequent:
-                frequent[elem]=nums.count(elem)
+            frequent[elem] = frequent.get(elem, 0) + 1
         result = dict(sorted(frequent.items(), key=lambda x: x[1], reverse=True))
-
         for key in result:
             output.append(key)
             if len(output)==k:
