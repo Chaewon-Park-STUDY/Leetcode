@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0128-longest-consecutive-sequence](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0198-house-robber](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0347-top-k-frequent-elements) |
 ## String
@@ -58,4 +59,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0198-house-robber](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0198-house-robber) |
 <!---LeetCode Topics End-->
