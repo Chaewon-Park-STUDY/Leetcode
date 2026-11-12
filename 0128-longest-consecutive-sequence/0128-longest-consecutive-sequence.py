@@ -2,7 +2,7 @@ class Solution:
     def longestConsecutive(self, nums: list[int]) -> int:
         if not nums:
             return 0
-        nums = sorted(set(nums))  # 처음에는 nums.sort()로 풀었는데
+        nums = sorted(set(nums))  # 처음에는 nums.sort()로 풀었지만
         # elif문에 중복 처리 부분을 넣어야해서 set으로 중복 허용 x
         k=len(nums)
 
