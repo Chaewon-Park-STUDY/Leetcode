@@ -6,6 +6,6 @@ class Solution:
             return max(nums)
         dp=nums.copy()
         for i in range(2,len(nums)):
-            prev3 = dp[i-3] if i >= 3 else 0
-            dp[i] += max(dp[i-2], prev3)
+            house3 = dp[i-3] if i >= 3 else 0
+            dp[i] += max(dp[i-2], house3)
         return max(dp)
