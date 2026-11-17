@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0009-palindrome-number) |
+| [0070-climbing-stairs](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0070-climbing-stairs) |
 ## Array
 |  |
 | ------- |
@@ -65,5 +66,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0198-house-robber) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/Chaewon-Park-STUDY/Leetcode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
