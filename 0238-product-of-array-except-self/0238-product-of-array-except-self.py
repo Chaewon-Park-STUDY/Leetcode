@@ -1,5 +1,5 @@
 class Solution:
-    # 최종 풀이: 2번째 풀이를 발전, 별도의 2개의 배열로 두기보다는 left만 arr로 설정
+    # 최종 풀이: 2번째 풀이를 발전, 별도의 2개의 배열로 두기보다는 left를 answer에 바로 저
     # 시간 복잡도: O(n), 공간 복잡도: O(1)
     def productExceptSelf(self, nums: list[int]) -> list[int]:
         k = len(nums)
@@ -9,15 +9,13 @@ class Solution:
         for i in range(1, k):
             answer[i] = answer[i - 1] * nums[i - 1]
 
-        # 오른쪽 → 왼쪽: right=1에 우측방향으로 cum곱 저장
+        # 오른쪽 → 왼쪽:  right에 i번째 이후 원소들의 cum곱을 누적하며 곱함
         right = 1
         for i in range(k - 1, -1, -1):
             answer[i] *= right      
             right *= nums[i]     
 
         return answer
-
-
 
 
 
