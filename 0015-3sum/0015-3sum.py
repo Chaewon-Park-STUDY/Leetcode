@@ -1,26 +1,24 @@
+
+
+#Time: O(n^2), Space: O(n)
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         answer=set()
         nums.sort()
         k=len(nums)
         for i in range(k-2):
-            if nums[i]>0:
-                break
+            if nums[i]>0: 
+                break #nums[i] > 0이면 이후 합이 0이 될 수 없어 종료
             if i > 0 and nums[i] == nums[i-1]:
                 continue 
-            candid=set()
-            for j in range(i+1,k):
+            candid=set() #target이 candid안에 있으면 세 수의 합이 "0"
+            for j in range(i+1,k): #i를 고
                 target=-(nums[i]+nums[j])
                 if target not in candid:
                     candid.add(nums[j])
                 else:
                     answer.add(tuple((nums[i],nums[j],target)))
         return list(answer)
-
-
-
-
-
 
 
 
