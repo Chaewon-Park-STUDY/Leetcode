@@ -9,8 +9,7 @@ class Solution:
                 break
             if i > 0 and nums[i] == nums[i - 1]:  #중복 건너뜀
                 continue
-            left=i+1
-            right=k-1
+            left,right=i+1,k-1
             while left<right:
                 sum_val=nums[i]+nums[left]+nums[right]
                 if sum_val==0:
