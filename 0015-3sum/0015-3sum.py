@@ -10,7 +10,7 @@ class Solution:
             if i > 0 and nums[i] == nums[i-1]: #중복 제거
                 continue 
             candid=set() #target이 candid안에 있으면 세 수의 합이 "0"
-            for j in range(i+1,k): #i를 고
+            for j in range(i+1,k): #i를 고정
                 target=-(nums[i]+nums[j])
                 if target not in candid:
                     candid.add(nums[j])
