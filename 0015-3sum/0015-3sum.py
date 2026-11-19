@@ -5,6 +5,10 @@ class Solution:
         nums.sort()
         k=len(nums)
         for i in range(k-2):
+            if nums[i] > 0: #nums를 정렬했기 때문에 이후에 합이 0이 되는 것은 불가능
+                break
+            if i > 0 and nums[i] == nums[i - 1]:  #중복 건너뜀
+                continue
             left=i+1
             right=k-1
             while left<right:
