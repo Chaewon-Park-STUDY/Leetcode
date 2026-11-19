@@ -1,4 +1,5 @@
 # Two pointer 최종 풀이
+#Time: O(n^2) Space:O(n)
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         answer=set()
@@ -7,7 +8,7 @@ class Solution:
         for i in range(k-2):
             if nums[i] > 0: #nums를 정렬했기 때문에 이후에 합이 0이 되는 것은 불가능
                 break
-            if i== 0 or nums[i] != nums[i - 1]:  #중복 건너뜀
+            if i== 0 or nums[i] != nums[i - 1]:  #인접한 값이 서로 다를 때만, i=0일때는 인덱스가 -1, 즉 마지막 원소와 비교하지 않고 바로 loop
                 left,right=i+1,k-1
                 while left<right:
                     sum_val=nums[i]+nums[left]+nums[right]
