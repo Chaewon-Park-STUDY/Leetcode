@@ -7,19 +7,18 @@ class Solution:
         for i in range(k-2):
             if nums[i] > 0: #nums를 정렬했기 때문에 이후에 합이 0이 되는 것은 불가능
                 break
-            if i > 0 and nums[i] == nums[i - 1]:  #중복 건너뜀
-                continue
-            left,right=i+1,k-1
-            while left<right:
-                sum_val=nums[i]+nums[left]+nums[right]
-                if sum_val==0:
-                    answer.add(tuple((nums[i],nums[left],nums[right])))
-                    left+=1
-                    right-=1
-                elif sum_val<0:
-                    left+=1
-                else:
-                    right-=1
+            if i== 0 or nums[i] != nums[i - 1]:  #중복 건너뜀
+                left,right=i+1,k-1
+                while left<right:
+                    sum_val=nums[i]+nums[left]+nums[right]
+                    if sum_val==0:
+                        answer.add(tuple((nums[i],nums[left],nums[right])))
+                        left+=1
+                        right-=1
+                    elif sum_val<0:
+                        left+=1
+                    else:
+                        right-=1
         return list(answer)
 
 
