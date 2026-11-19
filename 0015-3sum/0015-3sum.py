@@ -10,7 +10,7 @@ class Solution:
                 break
             if i== 0 or nums[i] != nums[i - 1]:  #인접한 값이 서로 다를 때만, i=0일때는 인덱스가 -1, 즉 마지막 원소와 비교하지 않고 바로 loop
                 left,right=i+1,k-1
-                while left<right:
+                while left<right: #left 와 right의 인덱스가 같아지기 전까지 
                     sum_val=nums[i]+nums[left]+nums[right]
                     if sum_val==0:
                         answer.add(tuple((nums[i],nums[left],nums[right])))
