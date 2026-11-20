@@ -12,7 +12,7 @@ class Solution:
         values=[]
         def tree(node):
             if node==None:
-                return 
+                return True
             tree(node.left)
             values.append(node.val)
             tree(node.right)
