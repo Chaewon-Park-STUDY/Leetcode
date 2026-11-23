@@ -10,7 +10,6 @@ class Solution:
             n//=2
             
             bin(n)
-            return num
         bin(n)
         return num
 
