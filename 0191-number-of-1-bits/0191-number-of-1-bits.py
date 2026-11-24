@@ -1,10 +1,11 @@
 # 비트 풀이
+# Time: O(log n) - n의 비트 수만큼 반복, Space: O(1)
 class Solution:
     def hammingWeight(self, n: int) -> int:
         num = 0
         while n> 0:
-            num += n & 1  # 맨 오른쪽 비트가 1이면 +1 (n % 2와 같음)
-            n >>= 1       # 오른쪽으로 한 칸 밀기 (n //= 2와 같음)
+            num += n & 1  # 가장 우측 비트가 1이면 +1 (n % 2)
+            n >>= 1       # >>로 right shift (n //= 2)
         return num
 
 
