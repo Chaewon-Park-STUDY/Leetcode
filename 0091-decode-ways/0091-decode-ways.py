@@ -1,7 +1,7 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
         # Time: O(n), Space: O(n):dp배열
-        #dp[i] = i번째 글까지 해석하는 방법의 수
+        #dp[i] = i번째 글자까지 해석하는 방법의 수
         # 계단 1칸, 2칸 오르는 것과 비슷
         k=len(s)
         dp=[0 for _ in range(k+1)]
